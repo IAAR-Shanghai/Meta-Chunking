@@ -25,6 +25,8 @@ As illustrated in the following figure, example sentences exhibit a progressive 
 
   ![Framework](images/figure2.png)
 
+- Put forward a Meta-Chunking with dynamic combination strategy designed to achieve a valid balance between fine-grained and coarse-grained text segmentation.
+
 - Extensive experiments were conducted on eleven datasets across four benchmark.
 
 ## Quick Start
@@ -35,13 +37,15 @@ conda create -n MetaChunking python=3.10
 conda activate MetaChunking
 pip install -r requirements.txt
 
-# Carry out Meta-Chunking
-
-# Run evaluations
-
 # Run the demo
-
+python app.py
 ```
+
+## Results
+
+![Main result](images/figure3.png)
+
+![Two PPL Chunking strategies](images/figure4.png)
 
 # Notes
 
