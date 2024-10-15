@@ -45,7 +45,7 @@ python app.py
 
 ![Main result](images/figure3.png)
 
-![Two PPL Chunking strategies](images/figure4.png)
+![Two PPL Chunking strategies](images/figure4.jpg)
 
 # Notes
 
