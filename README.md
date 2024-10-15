@@ -15,7 +15,7 @@
 
 As illustrated in the following figure, example sentences exhibit a progressive relationship, yet their semantic similarity is low, which may result in their complete separation.
 
-![Comparison Figure](images/figure1.png)
+![Comparison Figure](images/figure1.jpg)
 
 ## Highlights
 
