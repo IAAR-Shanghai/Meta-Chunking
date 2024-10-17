@@ -3,7 +3,7 @@
     Meta-Chunking: Learning Efficient Text Segmentation via Logical Perception
 </h1>
 <p align="center">
-    <a href="">
+    <a href="https://arxiv.org/abs/2410.12788">
         <img alt="arXiv Paper" src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv">
     </a>
     <a href="https://opensource.org/license/apache-2-0">
@@ -57,6 +57,11 @@ python app.py
 ## Citation
 
 ```
-
+@article{MetaChunking,
+  title={Meta-Chunking: Learning Efficient Text Segmentation via Logical Perception},
+  author={Zhao, Jihao and Ji, Zhiyuan and Qi, Pengnian and Niu, Simin and Tang, Bo and Xiong, Feiyu and Li, Zhiyu},
+  journal={arXiv preprint arXiv:2410.12788},
+  year={2024}
+}
 ```
 
