@@ -13,7 +13,6 @@
     </a>
 </p>
 
-Updating...
 ## CRUD
 Original_Dataset/CRUD_RAG-main:
 - *db_qa.txt* is the raw corpus related to question answering, filtered from *80000_docs*.
