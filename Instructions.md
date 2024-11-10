@@ -15,15 +15,16 @@
 
 Updating...
 ## CRUD
-- Original_Dataset/CRUD_RAG-main:
-*db_qa.txt* is the raw corpus related to question answering, filtered from *80000_docs*.
-*crud_split/split_merged.json* contains three types of question-answering datasets used for our evaluation.
-- Chunking_Result/CRUD_RAG-main:
-The *json* files store our chunking results.
+Original_Dataset/CRUD_RAG-main:
+- *db_qa.txt* is the raw corpus related to question answering, filtered from *80000_docs*.
+- *crud_split/split_merged.json* contains three types of question-answering datasets used for our evaluation.
+
+Chunking_Result/CRUD_RAG-main:
+- The *json* files store our chunking results.
 
 ## LongBench
-- Original_Dataset/LongBench-main:
-*data* contains raw corpora for the 8 question-answering datasets we used.
+Original_Dataset/LongBench-main:
+- *data* contains raw corpora for the 8 question-answering datasets we used.
 
 | Task                |   Task Type   | Eval metric | Avg len |    Language    | \#Sample |
 | :------------------ | :-----------: | :---------: | :-----: | :------------: | :------: |
@@ -36,29 +37,32 @@ The *json* files store our chunking results.
 | NarrativeQA         | Single-doc QA |     F1      | 18,409  |       EN       |   200    |
 | Qasper              | Single-doc QA |     F1      |  3,619  |       EN       |   200    |
 
-- Chunking_Result/LongBench-main:
-*a_chunk_ppl* contains chunking results using the PPL Chunking method.
-*b_chunk_prob_onlytwo* contains chunking results using the Margin Sampling Chunking method, where chunks are determined solely based on the preceding and following sentences.
-*c_chunk_prob* uses the preceding text chunk and the following sentence for Margin Sampling Chunking.
-*d_chunk_semantic* contains chunking results using semantic similarity.
-*LumberChunker_failure_log* contains some error logs that arise when other LLM chunking methods are difficult to apply to models of 7B or smaller.
-*tmp* contains the results of processing some raw datasets, mainly separating each document in the raw dataset for easier handling.
+Chunking_Result/LongBench-main:
+- *a_chunk_ppl* contains chunking results using the PPL Chunking method.
+- *b_chunk_prob_onlytwo* contains chunking results using the Margin Sampling Chunking method, where chunks are determined solely based on the preceding and following sentences.
+- *c_chunk_prob* uses the preceding text chunk and the following sentence for Margin Sampling Chunking.
+- *d_chunk_semantic* contains chunking results using semantic similarity.
+- *LumberChunker_failure_log* contains some error logs that arise when other LLM chunking methods are difficult to apply to models of 7B or smaller.
+- *tmp* contains the results of processing some raw datasets, mainly separating each document in the raw dataset for easier handling.
 
 ## MultiHop-RAG
-- Original_Dataset/MulithopQA-main:
-*data/corpus/corpus.txt* is the raw corpus document.
-*MultiHopRAG.json* stores the relevant data for question-answering evaluation.
-*tmp/corpus* stores each document in the raw corpus separately.
-- Chunking_Result/MulithopQA-main:
-Contains *ppl*, which are the chunking results using the PPL Chunking method.
-Contains *prob_onlytwo*, which are the chunking results using Margin Sampling Chunking based on the preceding and following sentences.
-Contains *prob*, which are the chunking results using Margin Sampling Chunking based on the preceding text chunk and the following sentence.
-Contains *semantic*, which are the chunking results using semantic similarity.
+Original_Dataset/MulithopQA-main:
+- *data/corpus/corpus.txt* is the raw corpus document.
+- *MultiHopRAG.json* stores the relevant data for question-answering evaluation.
+- *tmp/corpus* stores each document in the raw corpus separately.
+
+Chunking_Result/MulithopQA-main:
+- Contains *ppl*, which are the chunking results using the PPL Chunking method.
+- Contains *prob_onlytwo*, which are the chunking results using Margin Sampling Chunking based on the preceding and following sentences.
+- Contains *prob*, which are the chunking results using Margin Sampling Chunking based on the preceding text chunk and the following sentence.
+- Contains *semantic*, which are the chunking results using semantic similarity.
 
 ## RAGBench
-- Original_Dataset/RAGBench-main:
-*CUAD/test-00000-of-00001.parquet* is the raw corpus document.
-- Chunking_Result/RAGBench-main:
-*CUAD* stores our chunking results using the PPL Chunking method.
+Original_Dataset/RAGBench-main:
+- *CUAD/test-00000-of-00001.parquet* is the raw corpus document.
+
+Chunking_Result/RAGBench-main:
+- *CUAD* stores our chunking results using the PPL Chunking method.
+
 
 > Note: In order to avoid discrepancies caused by different tokenizers, we use the word count (using Python's split function) to calculate the average chunk length of English datasets, and use the character count to calculate the average chunk length of Chinese datasets.
