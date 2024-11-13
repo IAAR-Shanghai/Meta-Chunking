@@ -26,9 +26,13 @@ As illustrated in the following figure, example sentences exhibit a progressive 
 
 **We intend to develop this project into a plug-and-play chunking library that incorporates various cutting-edge chunking strategies for LLMs**. While you can use Llama_index for traditional chunking methods, it may be difficult for this library to keep up with the latest chunking technologies. Therefore, we will regularly reconstruct methods from excellent chunking papers into interfaces and add them to the library, making it easier for your system to integrate advanced chunking strategies.
 
+Currently, all methods are maintained in the **tools** folder.
+
 - [x] Release PPL Chunking and Margin Sampling Chunking
 - [ ] Refactor methods in Meta-chunking into several interface formats for easy invocation.
 - [ ] Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
+- [ ] Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
+- [ ] Our follow-up work
 - [ ] ......
 
 ## Highlights
