@@ -29,11 +29,12 @@ As illustrated in the following figure, example sentences exhibit a progressive 
 Currently, all methods are maintained in the **tools** folder.
 
 - [x] Release PPL Chunking and Margin Sampling Chunking
-- [ ] Refactor methods in Meta-chunking into several interface formats for easy invocation.
-- [ ] Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
-- [ ] Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
-- [ ] Our follow-up work
+- [ ] 1. Refactor methods in Meta-chunking into several interface formats for easy invocation.
+- [ ] 2. Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
+- [ ] 3. Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
 - [ ] ......
+- [ ] Our follow-up work
+
 
 ## Highlights
 
