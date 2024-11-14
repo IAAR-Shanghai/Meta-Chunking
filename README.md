@@ -26,7 +26,7 @@ As illustrated in the following figure, example sentences exhibit a progressive 
 
 **We intend to develop this project into a plug-and-play chunking library that incorporates various cutting-edge chunking strategies for LLMs**. While you can use Llama_index for traditional chunking methods, it may be difficult for this library to keep up with the latest chunking technologies. Therefore, we will regularly reconstruct methods from excellent chunking papers into interfaces and add them to the library, making it easier for your system to integrate advanced chunking strategies.
 
-Currently, all methods are maintained in the **tools** folder.
+> Currently, all methods are maintained in the **tools** folder. The **eval.ipynb** file demonstrates usage examples of different chunking method interfaces, while each of the other files represents a specific LLMs chunking method.
 
 - [x] Release PPL Chunking and Margin Sampling Chunking
 - [ ] 1. Refactor methods in Meta-chunking into several interface formats for easy invocation.
