@@ -18,10 +18,6 @@
 
 > **Note:** Perplexity is a metric used to measure a language model's ability to predict text. It reflects the degree of uncertainty in generating the next token or sentence given a specific context. Our initial intuition was also to ensure that, during chunking, we split the text at points of certainty and keep it intact at points of uncertainty. This approach is more beneficial for subsequent retrieval and generation. Therefore, in fact, perplexity-based chunking leverages the hallucinations of language models to perceive text boundaries (relative to the boundaries of models), thereby ensuring that chunks are not split at points where language models hallucinate, avoiding the introduction of more hallucinations during retrieval and question answering by LLMs.
 
-As illustrated in the following figure, example sentences exhibit a progressive relationship, yet their semantic similarity is low, which may result in their complete separation.
-
-![Comparison Figure](images/figure1.jpg)
-
 ## Todo
 
 **We intend to develop this project into a plug-and-play chunking library that incorporates various cutting-edge chunking strategies for LLMs**. While you can use Llama_index for traditional chunking methods, it may be difficult for this library to keep up with the latest chunking technologies. Therefore, we will regularly reconstruct methods from excellent chunking papers into interfaces and add them to the library, making it easier for your system to integrate advanced chunking strategies.
@@ -29,10 +25,10 @@ As illustrated in the following figure, example sentences exhibit a progressive 
 > Currently, all methods are maintained in the **tools** folder. The **eval.ipynb** file demonstrates usage examples of different chunking method interfaces, while each of the other files represents a specific LLMs chunking method.
 
 - [x] Release PPL Chunking and Margin Sampling Chunking
-- [ ] 1. Refactor methods in Meta-chunking into several interface formats for easy invocation.
-    - [ ] PPL Chunking: Strategically introduce the KV caching mechanism to achieve PPL Chunking for both short and long documents (🚀 A Swift and Accurate Text Chunking Technique🌟). 
-    - [ ] Margin Sampling Chunking: A binary classification judgment is made on whether consecutive sentences need to be segmented, based on the probability obtained through margin sampling to make decisions.
-    - [ ] Dynamic combination: To accommodate diverse chunking requirements, a strategy of dynamic combination is introduced to assist in chunking, achieving a balance between fine-grained and coarse-grained text chunking.
+- [x] 1. Refactor methods in Meta-Chunking into several interface formats for easy invocation.
+    - [x] PPL Chunking: Strategically introduce the KV caching mechanism to achieve PPL Chunking for both short and long documents (🚀 A Swift and Accurate Text Chunking Technique🌟). 
+    - [x] Margin Sampling Chunking: A binary classification judgment is made on whether consecutive sentences need to be segmented, based on the probability obtained through margin sampling to make decisions.
+    - [x] Dynamic combination: To accommodate diverse chunking requirements, a strategy of dynamic combination is introduced to assist in chunking, achieving a balance between fine-grained and coarse-grained text chunking.
 - [x] 2. Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
 - [x] 3. Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
 - [ ] ......
@@ -61,6 +57,8 @@ pip install -r requirements.txt
 
 # Run the demo
 python app.py
+
+# Utilize the interfaces in the **tools** folder to perform text chunking for LLMs
 ```
 The four benchmarks used in this paper are as follows, and you can find the relevant datasets and evaluation methods through the links: [CRUD](https://github.com/IAAR-Shanghai/CRUD_RAG)，[LongBench](https://github.com/THUDM/LongBench)，[MultiHop-RAG](https://github.com/yixuantt/MultiHop-RAG)，[RAGBench](https://github.com/rudaoshi/RAG-Bench). Additionally, for quick and easy use, we provide you with the datasets and chunking results, which can be downloaded via [Google Drive](https://drive.google.com/file/d/1nUPV6hSOZHhlakmlDFPpdBCmLjI5tB_a/view?usp=drive_link). For specific configurations of chunking and evaluation for each benchmark, please refer to [Instructions.md](https://github.com/IAAR-Shanghai/Meta-Chunking/blob/main/Instructions.md).
 
