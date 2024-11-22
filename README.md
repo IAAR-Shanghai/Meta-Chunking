@@ -30,6 +30,9 @@ As illustrated in the following figure, example sentences exhibit a progressive 
 
 - [x] Release PPL Chunking and Margin Sampling Chunking
 - [ ] 1. Refactor methods in Meta-chunking into several interface formats for easy invocation.
+    - [ ] PPL Chunking: Strategically introduce the KV caching mechanism to achieve PPL Chunking for both short and long documents (🚀 A Swift and Accurate Text Chunking Technique🌟). 
+    - [ ] Margin Sampling Chunking: A binary classification judgment is made on whether consecutive sentences need to be segmented, based on the probability obtained through margin sampling to make decisions.
+    - [ ] Dynamic combination: To accommodate diverse chunking requirements, a strategy of dynamic combination is introduced to assist in chunking, achieving a balance between fine-grained and coarse-grained text chunking.
 - [x] 2. Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
 - [x] 3. Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
 - [ ] ......
