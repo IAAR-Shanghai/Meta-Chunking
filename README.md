@@ -24,13 +24,14 @@
 
 > Currently, all methods are maintained in the **tools** folder. The **eval.ipynb** file demonstrates usage examples of different chunking method interfaces, while each of the other files represents a specific LLMs chunking method.
 
-- [x] Release PPL Chunking and Margin Sampling Chunking
-- [x] 1. Refactor methods in Meta-Chunking into several interface formats for easy invocation.
-    - [x] PPL Chunking: Strategically introduce the KV caching mechanism to achieve PPL Chunking for both short and long documents (🚀 A Swift and Accurate Text Chunking Technique🌟). 
-    - [x] Margin Sampling Chunking: A binary classification judgment is made on whether consecutive sentences need to be segmented, based on the probability obtained through margin sampling to make decisions.
-    - [x] Dynamic combination: To accommodate diverse chunking requirements, a strategy of dynamic combination is introduced to assist in chunking, achieving a balance between fine-grained and coarse-grained text chunking.
-- [x] 2. Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
-- [x] 3. Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
+- ✅ Release PPL Chunking and Margin Sampling Chunking
+- ✅ 1. Refactor methods in Meta-Chunking into several interface formats for easy invocation.
+    - ✅ PPL Chunking: Strategically introduce the KV caching mechanism to achieve PPL Chunking for both short and long documents (🚀 A Swift and Accurate Text Chunking Technique🌟). 
+    - ✅ Margin Sampling Chunking: A binary classification judgment is made on whether consecutive sentences need to be segmented, based on the probability obtained through margin sampling to make decisions.
+    - ✅ Dynamic combination: To accommodate diverse chunking requirements, a strategy of dynamic combination is introduced to assist in chunking, achieving a balance between fine-grained and coarse-grained text chunking.
+- ✅ 2. Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
+- ✅ 3. Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
+- ✅ 💡 We have integrated the aforementioned methods and released the first version of Python package for language model chunking, named `lmchunker`. You can install and use it with the command: `pip install lmchunker`. For specific usage instructions, please refer to `tools/usage_lmchunker.ipynb`. We will continue to improve and update it in the future. Looking forward to your use!
 - [ ] ......
 - [ ] Our follow-up work
 
