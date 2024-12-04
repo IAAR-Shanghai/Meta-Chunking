@@ -67,7 +67,9 @@ The four benchmarks used in this paper are as follows, and you can find the rele
 
 ![Main result](images/figure3.png)
 
-![Main result 2](images/figure3_2.jpg)
+<div style="text-align: center;">
+    <img src="images/figure3_2.jpg" alt="Main result 2" width="500">
+</div>
 
 ![Two PPL Chunking strategies](images/figure4.jpg)
 
