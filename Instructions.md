@@ -66,3 +66,46 @@ Chunking_Result/RAGBench-main:
 
 
 > Note: In order to avoid discrepancies caused by different tokenizers, we use the word count (using Python's split function) to calculate the average chunk length of English datasets, and use the character count to calculate the average chunk length of Chinese datasets.
+
+
+## Running Evaluation
+
+(Optional) Milvus can be run in tmux, which allows it to be kept running on the server, whereas the nohup command may not achieve this.
+
+```
+Create a new tmux session: tmux new -s test
+Attach to the tmux session: tmux attach -t test
+Detach from the tmux session: tmux detach or ctrl+b d
+Start Milvus server: milvus-server --data [database_location]
+```
+
+- CRUD
+```bash
+CUDA_VISIBLE_DEVICES=3 nohup python quick_start.py --model_name 'qwen7b' --temperature 0.1 --max_new_tokens 1280 --data_path 'data/crud_split/split_merged.json' --shuffle True --docs_path 'chunking/chunk.json' --docs_type 'txt' --retriever_name 'base' --collection_name 'chunk' --retrieve_top_k 8 --task 'quest_answer' --num_threads 1 --show_progress_bar True --construct_index --bert_score_eval >> chunking/eval_top8.log 2>&1 &
+```
+where `docs_path` refers to the path of the chunked json storage file, and `collection_name` specifies the required database name.
+
+- MultiHop-RAG
+Initially, run the file prefixed with "retrieval" to obtain a QA json file:
+```bash
+CUDA_VISIBLE_DEVICES=4 nohup python retrieval_ppl.py --construct_index >> chunking/eval_top10.log 2>&1 &
+```
+Remember to adjust the configuration parameters accordingly. Following this, execute the evaluate.py file to acquire the corresponding scores.
+
+
+- RAGbench
+Begin by executing the file starting with "retrieval", then run evaluate_qa.py to receive the respective scores.
+
+- LongBench
+Similar to the above, first execute the retrieval.py file to generate a QA json file, and then run eval.py to obtain the corresponding scores:
+```bash
+CUDA_VISIBLE_DEVICES=0 nohup python retrieval.py --construct_index >> qa_nodie/dureader_lumber350_top5.log 2>&1 &
+```
+
+It's essential to pay attention to the base.py files related to retrieval, which contain the code for Milvus database construction and retrieval. These files can be manually modified, and their paths are as follows:
+```
+eval/CRUD/src/retrievers/base.py
+eval/MultiHop-RAG/base_ppl.py
+eval/RAGbench/base.py
+eval/LongBench/base.py
+```
