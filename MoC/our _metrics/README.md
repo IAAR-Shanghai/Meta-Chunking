@@ -3,10 +3,10 @@
 </h1>
 
 
-For a more convenient experience and feeling of the two chunking metrics we proposed, we provide codes and chunked data of different chunking methods, which can be downloaded via [Google Drive](https://drive.google.com/file/d/1nUPV6hSOZHhlakmlDFPpdBCmLjI5tB_a/view?usp=drive_link). Their average chunk lengths are the same to ensure the rationality of evaluation.
+For a more convenient experience and feeling of the two chunking metrics we proposed, we provide codes and chunked data of different chunking methods, which can be downloaded via [Google Drive](https://drive.google.com/file/d/1CR3FehGYi6vFZEhcoPJmTDSjuSULKiIo/view?usp=sharing). Their average chunk lengths are the same to ensure the rationality of evaluation.
 
-**Boundary Clarity**
+**Boundary Clarity** (边界清晰度)
 - *chunk_eval.py*
 
-**Chunk Stickiness**
+**Chunk Stickiness** (文本块黏连度)
 - *relation_eval.py*
