@@ -40,6 +40,7 @@
 
 📌 Currently, we are preparing more text chunking datasets to fill the data gap in this field. Our data sources include not only the internet but also domain-specific data and arXiv paper data.
 
+![Overall Framework](Meta-Chunking/images/figure5.jpg)
 
 ## Citation
 
