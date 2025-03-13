@@ -46,7 +46,7 @@
 ```
 @article{MoC,
   title={MoC: Mixtures of Text Chunking Learners for Retrieval-Augmented Generation System},
-  author={Jihao Zhao, Zhiyuan Ji, Zhaoxin Fan, Hanyu Wang, Simin Niu, Bo Tang, Feiyu Xiong, Zhiyu Li},
+  author={Zhao, Jihao and Ji, Zhiyuan and Fan, Zhaoxin and Wang, Hanyu and Niu, Simin and Tang, Bo and Xiong, Feiyu and Li, Zhiyu},
   journal={arXiv preprint arXiv:2503.09600},
   year={2025}
 }
