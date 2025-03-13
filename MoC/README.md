@@ -20,7 +20,7 @@
 
 3️⃣ To verify the effectiveness of our proposed metrics and chunking methods, we conduct multi-dimensional experiments on four question answering datasets utilizing five different language models, and perform an in-depth analysis.
 
-### Chinese Version:
+**Chinese Version:**
 1️⃣ 突破传统间接评价范式，提出 Boundary Clarity 与 Chunk Stickiness 双指标，实现分块质量的直接量化。并且通过解构语义分块失效机理，为LLM介入分块任务提供了实验验证。
 
 2️⃣ 设计混合分块专家架构 MoC，通过多粒度感知路由网络动态调度轻量化分块专家。该架构创新性融合：正则表达式引导的分块方法，基于稀疏激活的多粒度分块机制和编辑距离驱动的校正算法。
@@ -28,7 +28,7 @@
 3️⃣ 为了验证我们所提出指标和分块方法的有效性，我们共采用了五个不同的语言模型，在四个问答数据集上进行了多维度的实验，并进行了深入的分析。
 
 ## 📜 Quick Start
-Evaluation Metrics:
+**Evaluation Metrics:**
 - *our _metrics/chunk_eval.py* is used to evaluate the clarity of chunk boundaries.
 - *our _metrics/relation_eval.py*  is used to evaluate the stickiness of text chunks in the complete or incomplete graphs constructed after chunking. 
 - *chunk_gpt.py* is utilized to prepare the dataset for training the chunking model. 
