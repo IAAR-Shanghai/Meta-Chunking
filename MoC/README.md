@@ -27,8 +27,15 @@
 
 3️⃣ 为了验证我们所提出指标和分块方法的有效性，我们共采用了五个不同的语言模型，在四个问答数据集上进行了多维度的实验，并进行了深入的分析。
 
+## 📜 Quick Start
+Evaluation Metrics:
+- *our _metrics/chunk_eval.py* is used to evaluate the clarity of chunk boundaries.
+- *our _metrics/relation_eval.py*  is used to evaluate the stickiness of text chunks in the complete or incomplete graphs constructed after chunking. 
+- *chunk_gpt.py* is utilized to prepare the dataset for training the chunking model. 
+- *chunk_sft_list_z.py* employs a meta-chunker to perform the chunking process.
+- *chunk_MoC.py* constructs a MoC architecture to implement chunking. 
 
-
+Currently, we are preparing more text chunking datasets to fill the data gap in this field. Our data sources include not only the internet but also domain-specific data and arXiv paper data.
 
 
 ## Citation
