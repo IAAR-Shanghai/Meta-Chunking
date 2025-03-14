@@ -38,7 +38,7 @@
 - *chunk_sft_list_z.py* employs a meta-chunker to perform the chunking process.
 - *chunk_MoC.py* constructs a MoC architecture to implement chunking. 
 
-📌 Currently, we are preparing more text chunking datasets to fill the data gap in this field. Our data sources include not only the internet but also domain-specific data and arXiv paper data.
+📌 Currently, we are preparing more [text chunking datasets](https://huggingface.co/datasets/Robot2050/Meta-chunker) to fill the data gap in this field. Our data sources include not only the internet but also domain-specific data and arXiv paper data.
 
 ![Overall Framework](figure5.jpg)
 
