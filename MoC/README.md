@@ -11,6 +11,16 @@
     <a href="https://opensource.org/license/apache-2-0">
         <img alt="Apache 2.0 License" src="https://img.shields.io/badge/License-Apache_2.0-4285f4.svg?logo=apache">
     </a>
+    <br>
+    <a href="https://huggingface.co/datasets/Robot2050/Meta-chunker">
+        <img src="https://img.shields.io/badge/Huggingface-Dataset-FF6F00?style=flat-square&logo=huggingface&logoColor=white">
+    </a>
+    <a href="https://huggingface.co/Robot2050/Meta-chunker-1.5B">
+        <img src="https://img.shields.io/badge/Model-1.5B-FF6F00?style=flat-square&logo=huggingface&logoColor=white">
+    </a>
+    <a href="https://huggingface.co/Robot2050/Meta-chunker-1.5B-60K">
+        <img src="https://img.shields.io/badge/Model-1.5B-FF6F00?style=flat-square&logo=huggingface&logoColor=white">
+    </a>
 </p>
 
 ## 🧠 Inspiration
