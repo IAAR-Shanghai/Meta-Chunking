@@ -6,10 +6,10 @@
         <img alt="arXiv Paper" src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv">
     </a>
     <a href="https://huggingface.co/papers/2503.09600">
-        <img src="https://img.shields.io/badge/Huggingface-Paper-FF6F00?style=flat-square&logo=huggingface&logoColor=white">
+        <img src="https://img.shields.io/badge/Huggingface-Paper-yellow?style=flat-square&logo=huggingface&logoColor=white">
     </a>
     <a href="https://opensource.org/license/apache-2-0">
-        <img alt="Apache 2.0 License" src="https://img.shields.io/badge/License-Apache_2.0-4285f4.svg?logo=apache">
+        <img alt="Apache 2.0 License" src="https://img.shields.io/badge/License-Apache_2.0-green.svg?logo=apache">
     </a>
     <br>
     <a href="https://huggingface.co/datasets/Robot2050/Meta-chunker">
