@@ -16,10 +16,10 @@
         <img src="https://img.shields.io/badge/Huggingface-Dataset-FF6F00?style=flat-square&logo=huggingface">
     </a>
     <a href="https://huggingface.co/Robot2050/Meta-chunker-1.5B">
-        <img src="https://img.shields.io/badge/Model-1.5B-FF6F00?style=flat-square&logo=huggingface">
+        <img src="https://img.shields.io/badge/Model-1.5B 20K-FF6F00?style=flat-square&logo=huggingface">
     </a>
     <a href="https://huggingface.co/Robot2050/Meta-chunker-1.5B-60K">
-        <img src="https://img.shields.io/badge/Model-1.5B-FF6F00?style=flat-square&logo=huggingface">
+        <img src="https://img.shields.io/badge/Model-1.5B 60K-FF6F00?style=flat-square&logo=huggingface">
     </a>
 </p>
 
