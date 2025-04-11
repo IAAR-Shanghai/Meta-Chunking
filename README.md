@@ -72,7 +72,7 @@ The four benchmarks used in this paper are as follows, and you can find the rele
 
 ![Two PPL Chunking strategies](images/figure4.jpg)
 
-# Notes
+## Notes
 
 - We conducted extensive experiments on four benchmarks. Since each benchmark has many parameters to set, for the reproducibility of the experiment, we set up an independent folder for each benchmark. The datasets of benchmarks and their usage can be found on GitHub.
 - The **meta_chunking** folder contains chunking programs for the four benchmarks, which share the same principles and implementation methods. The **eval** folder includes evaluation methods for the four benchmarks. For a benchmark, we first divide the dataset into appropriate chunks, establish a vector database, generate answers to questions, and then evaluate the impact of chunking on relevant metrics.
