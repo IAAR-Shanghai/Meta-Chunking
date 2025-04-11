@@ -41,9 +41,7 @@
 
 - Introduces the concept of Meta-Chunking, which operates at a granularity between sentences and paragraphs.
 
-- Propose two implementation strategies: Margin Sampling Chunking and Perplexity (PPL) Chunking.
-
-  ![Framework](images/figure2.png)
+- Propose two implementation strategies: Margin Sampling (MSP) Chunking and Perplexity (PPL) Chunking.
 
 - Put forward a Meta-Chunking with dynamic combination strategy designed to achieve a valid balance between fine-grained and coarse-grained text segmentation.
 
