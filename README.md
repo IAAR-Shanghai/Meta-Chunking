@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    Meta-Chunking: Learning Efficient Text Segmentation via Logical Perception
+    Meta-Chunking: Learning Text Segmentation and Semantic Completion via Logical Perception
 </h1>
 <p align="center">
     <a href="https://arxiv.org/abs/2410.12788">
@@ -39,13 +39,13 @@
 
 ## Highlights
 
-- Introduces the concept of Meta-Chunking, which operates at a granularity between sentences and paragraphs.
+- Through lightweight chunking algorithm design, the logical analysis capability of LLMs is decoupled into computable the PPL features and MSP indicators, achieving identification of textual logical boundaries and  dynamic balance of chunking granularity.
 
-- Propose two implementation strategies: Margin Sampling (MSP) Chunking and Perplexity (PPL) Chunking.
+- We establish a information compensation mechanism that collaboratively executes through a three-stage missing-aware rewriting process and a two-stage context-aware summary generation, repairing the semantic discontinuities in text chunks.
 
-- Put forward a Meta-Chunking with dynamic combination strategy designed to achieve a valid balance between fine-grained and coarse-grained text segmentation.
+- To verify the effectiveness of our proposed Meta-Chunking framework, we conduct multidimensional experiments and analyses using five datasets. The results indicate that this framework delivers more logically coherent text chunks to the RAG system, demonstrating the feasibility of achieving high-quality chunking tasks on SLMs.
 
-- Extensive experiments were conducted on eleven datasets across four benchmark.
+![Framework](images/Figure1.png)
 
 ## Quick Start
 
@@ -64,17 +64,14 @@ The four benchmarks used in this paper are as follows, and you can find the rele
 
 ## Results
 
-![Main result](images/figure3.png)
+![Main result 1](images/Figure2.png)
 
-<div align=center>
-<img src="images/figure3_2.jpg" alt="Main result 2" width="500"> 
-</div>
 
-![Two PPL Chunking strategies](images/figure4.jpg)
+![Main result 2](images/Figure3.png)
 
 ## Notes
 
-- We conducted extensive experiments on four benchmarks. Since each benchmark has many parameters to set, for the reproducibility of the experiment, we set up an independent folder for each benchmark. The datasets of benchmarks and their usage can be found on GitHub.
+- Since each benchmark has many parameters to set, for the reproducibility of the experiment, we set up an independent folder for each benchmark. The datasets of benchmarks and their usage can be found on GitHub.
 - The **meta_chunking** folder contains chunking programs for the four benchmarks, which share the same principles and implementation methods. The **eval** folder includes evaluation methods for the four benchmarks. For a benchmark, we first divide the dataset into appropriate chunks, establish a vector database, generate answers to questions, and then evaluate the impact of chunking on relevant metrics.
 - We provide a Gradio chunking program in the **example** folder, which can be operated by running app.py. You can also dynamically adjust the parameters according to your chunking needs.
 
