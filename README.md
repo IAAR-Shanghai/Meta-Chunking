@@ -84,7 +84,7 @@ The four benchmarks used in this paper are as follows, and you can find the rele
 ```
 @article{MetaChunking,
   title={Meta-Chunking: Learning Text Segmentation and Semantic Completion via Logical Perception},
-  author={Zhao, Jihao and Ji, Zhiyuan and Qi, Pengnian and Niu, Simin and Tang, Bo and Xiong, Feiyu and Li, Zhiyu},
+  author={Zhao, Jihao and Ji, Zhiyuan and Feng, Yuchen and Qi, Pengnian and Niu, Simin and Tang, Bo and Xiong, Feiyu and Li, Zhiyu},
   journal={arXiv preprint arXiv:2410.12788},
   year={2024}
 }
