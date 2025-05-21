@@ -21,6 +21,9 @@
     <a href="https://huggingface.co/Robot2050/Meta-chunker-1.5B-60K">
         <img src="https://img.shields.io/badge/Model-1.5B 60K-FF6F00?style=flat-square&logo=huggingface">
     </a>
+    <a href="https://huggingface.co/Robot2050/MoC">
+        <img src="https://img.shields.io/badge/Model-1.5B 60K-FF6F00?style=flat-square&logo=huggingface">
+    </a>
 </p>
 
 ## 🧠 Inspiration
