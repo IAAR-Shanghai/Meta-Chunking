@@ -12,6 +12,9 @@
     <a href="https://opensource.org/license/apache-2-0">
         <img alt="Apache 2.0 License" src="https://img.shields.io/badge/License-Apache_2.0-4285f4.svg?logo=apache">
     </a>
+    <a href="https://huggingface.co/Robot2050/Summary_Rewrite">
+        <img src="https://img.shields.io/badge/Model-Summary_Rewrite-FF6F00?style=flat-square&logo=huggingface">
+    </a>
 </p>
 
 **Meta-Chunking** leverages the capabilities of LLMs to flexibly partition documents into logically coherent, independent chunks. Our approach is grounded in a core principle: allowing variability in chunk size to more effectively capture and maintain the logical integrity of content. This dynamic adjustment of granularity ensures that each segmented chunk contains a complete and independent expression of ideas, thereby avoiding breaks in the logical chain during the segmentation process. This not only enhances the relevance of document retrieval but also improves content clarity.
