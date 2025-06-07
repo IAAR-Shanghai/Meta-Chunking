@@ -1,5 +1,5 @@
 <h1 align="center">
-    MoC: Mixtures of Text Chunking Learners for Retrieval-Augmented Generation System (ACL 2025)
+    MoC: Mixtures of Text Chunking Learners for Retrieval-Augmented Generation System
 </h1>
 <p align="center">
     <a href="https://arxiv.org/abs/2503.09600">
