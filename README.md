@@ -38,7 +38,8 @@
 - ✅ 2. Integrating [LumberChunker](https://github.com/joaodsmarques/LumberChunker): Refactoring it into an interface for convenient invocation; combining it with our margin sampling method to overcome the limitation of the original project's inability to use local small models.
 - ✅ 3. Integrating [Dense X Retrieval](https://github.com/chentong0/factoid-wiki): Refactoring it into an interface for convenient invocation.
 - ✅ 💡 We integrate the aforementioned methods and release the first version of Python package for language model chunking, named `lmchunker`. You can install and use it with the command: `pip install lmchunker`. For specific usage instructions, please refer to `tools/lmchunker_eval.ipynb` and `tools/lmchunker_usage.ipynb`. We will continue to improve and update it in the future. Looking forward to your use!
-- ✅ 😀 4. We are showcasing a novel text chunking approach, `MoC`, thereby initiating a fresh chapter in intelligent text processing! 🔥🔥🔥
+- ✅ 😀 4. We are showcasing a novel text chunking approach, `MoC`, thereby initiating a fresh chapter in intelligent text processing! 🔥
+- ✅ 📈 5. We're expanding our dataset for text chunk rewriting and summarization at full throttle, continuously iterating and upgrading to inject fresh vitality into intelligent text processing! 🤖🔋🔥
 - [ ] ......
 - [ ] Our follow-up work
 
