@@ -13,11 +13,11 @@
         <img alt="Apache 2.0 License" src="https://img.shields.io/badge/License-Apache_2.0-green.svg?logo=apache">
     </a>
     <br>
-    <a href="https://huggingface.co/Robot2050/Summary_Rewrite">
-        <img src="https://img.shields.io/badge/Model-Summary_Rewrite-FF6F00?style=flat-square&logo=huggingface">
-    </a>
     <a href="https://huggingface.co/datasets/Robot2050/Summary_Rewrite">
         <img src="https://img.shields.io/badge/Huggingface-Dataset-FF6F00?style=flat-square&logo=huggingface">
+    </a>
+    <a href="https://huggingface.co/Robot2050/Summary_Rewrite">
+        <img src="https://img.shields.io/badge/Model-Summary_Rewrite-FF6F00?style=flat-square&logo=huggingface">
     </a>
 </p>
 
